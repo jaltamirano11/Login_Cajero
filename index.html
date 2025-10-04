@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Login Cajero</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Cajero automático</h2>
+        <input type="text" id="user" placeholder="Usuario"><br><br>
+        <input type="password" id="pin" placeholder="PIN"><br><br>
+        <!--type es el tipo de dato| id el nombre que se declara la variable| placeholder el texto que se mostrará al usuario-->
+        <button onclick="registrar()">Registrar</button>
+        <button onclick="login()">Ingresar</button>
+
+        <p id="message"></p>
+    </div>
+    <script src="funciones.js"></script>
+    <footer>
+        <p> ©2025 Cajero automático. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

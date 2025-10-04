@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cajero.js" defer></script>
+</head>
+<body>
+    <div class="cajero">
+        <h2>Bienvenido, <span id="user"></span></h2>
+        <p>Saldo Actual: ¢<span id="saldo"></span></p>
+        <input type="number" id="monto" placeholder="Monto"><br>
+        <button onclick="depositar()">Depositar</button>
+        <button onclick="retirar()">Retirar</button>
+        <button onclick="cerrarsesion()">Cerrar Sesion</button>
+    </div>
+    <h3>Historial de Transacciones</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Monto</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody id="historial-body"></tbody>
+</table> 
+</body>
+</html>
